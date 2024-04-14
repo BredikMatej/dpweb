@@ -1,0 +1,59 @@
+body{
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+}
+
+form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container{
+    border: solid 1px #0b0b0b ;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+.element_div{
+    padding-bottom: 20px;
+}
+
+.element_input{
+    display: block;
+    font-size: 25px;
+    border: 0;
+    outline: 0;
+    color: rgb(60, 66, 87);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 16%) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+    border-radius: 4px;
+    line-height: 20px;
+    font-weight: 400;
+    padding: 4px 8px;
+    min-height: 28px;
+    vertical-align: middle;
+    transition: background-color .24s,box-shadow .24s;
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.24s, 0.24s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+}
+
+.element_input:focus{
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgba(255, 112, 12, 0.64) 0px 0px 0px 4px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 16%) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+}
+
+.element_label{
+    padding: 15px;
+    display: block;
+    font-size: 25px;
+}
+
+.center_text{
+    text-align: center;
+}

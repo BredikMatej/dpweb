@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JVQTPZWTJX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-JVQTPZWTJX');
+    </script>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '7686297748052801');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=7686297748052801&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body>
+<header>
+    <nav>
+        <a href="index.php">Main Page</a>
+        <a href="news.php">News</a>
+        <a href="eshop.php">eShop</a>
+        <a href="contact.html">Contact</a>
+        <a href="signin.php">Sign in</a>
+        <a href="register.php">Registration</a>
+        <a href="./includes/logout.php">Logout</a>
+    </nav>
+</header>
+<h2>Contact Us</h2>
+
+<form action="./includes/handler_contact.php" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="message">Problem Description:</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
+<script src="script.js"></script>
+</body>
+</html>
