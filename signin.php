@@ -8,29 +8,42 @@
     <meta charset="UTF-8">
     <title>Sign in</title>
     <link rel="stylesheet" type="text/css" href="themes/form_style.css">
+
 </head>
 <body>
 
-<form action="/includes/handler_signin.php" method="post">
-    <div class="container">
-        <h1>Login</h1>
-
-        <div class="element_div">
-            <label class="element_label" for="username"><b>Username</b></label>
-            <input class="element_input" type="text" placeholder="Enter Username" name="username" id="username" required>
+<div class="login-container">
+    <img src="img/logo-transparent.png" alt="Logo" class="logo">
+    <h1>Sign in</h1>
+    <form action="/includes/handler_signin.php" method="post">
+        <div class="form-group">
+            <input type="text" placeholder="Username" name="username" id="username" required>
         </div>
-        <div class="element_div">
-            <label  class="element_label" for="psw"><b>Password</b></label>
-            <input  class="element_input" type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        <div class="form-group">
+            <input type="password" placeholder="Password" name="psw" id="psw" required>
         </div>
-
-        <button type="submit" class="loginbtn">Login</button>
+        <button type="submit" class="login-btn">Login</button>
+    </form>
+    <div class="links">
+        <a href="register.php">Register</a>
+        <a href="forgot_password.php">Forgot Password?</a>
     </div>
+</div>
 
-    <div class="center_text">
-        <p>Don't have an account? <a href="register.php">Register here</a>.</p>
-    </div>
-</form>
+<script>
+    document.querySelector('.toggle-password').addEventListener('click', function () {
+        const passwordInput = document.querySelector('input[type="password"]');
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            this.classList.remove('fa-eye');
+            this.classList.add('fa-eye-slash');
+        } else {
+            passwordInput.type = 'password';
+            this.classList.remove('fa-eye-slash');
+            this.classList.add('fa-eye');
+        }
+    });
+</script>
 
 </body>
 </html>

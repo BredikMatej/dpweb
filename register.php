@@ -11,32 +11,37 @@
 </head>
 <body>
 
-<form action="/includes/handler_reg.php" method="post">
-    <div class="container">
-        <h1>Register</h1>
-        <p>Please fill in this form to create an account.</p>
-        <hr>
 
-        <label for="username"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="username" id="username" required>
+<div class="login-container">
+    <img src="img/logo-transparent.png" alt="Logo" class="logo">
+    <form action="/includes/handler_reg.php" method="post">
+        <div class="container">
+            <h1>Register</h1>
 
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+            <div class="form-group">
+                <input class="element_input" type="text" placeholder="Enter Username" name="username" id="username" required>
+            </div>
 
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+            <div class="form-group">
+                <input class="element_input" type="text" placeholder="Enter Email" name="email" id="email" required>
+            </div>
 
-        <label for="psw-repeat"><b>Repeat Password</b></label>
-        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-        <hr>
+            <div class="form-group">
+                <input class="element_input" type="password" placeholder="Enter Password" name="psw" id="psw" required>
+            </div>
 
-        <button type="submit" class="registerbtn">Register</button>
-    </div>
+            <div class="form-group">
+                <input class="element_input" type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+            </div>
 
-    <div class="container signin">
-        <p>Already have an account? <a href="signin.php">Sign in</a>.</p>
-    </div>
-</form>
+            <button type="submit" class="login-btn">Register</button>
+        </div>
+
+        <div class="links">
+            <a href="signin.php">Sign in</a>
+        </div>
+    </form>
+</div>
 
 <script src="script.js"></script>
 </body>

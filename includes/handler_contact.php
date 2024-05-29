@@ -5,6 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $message = trim($_POST["message"]);
 
+
     // Specify your email and subject
     $toEmail = "matejbredikdp@gmail.com";
     $subject = "Website Contact Form: $name";
@@ -20,12 +21,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Send the email
     if (mail($toEmail, $subject, $body, $headers)) {
         // Success message
-        echo "<p>Thank you for contacting us, $name. We will get back to you soon.</p>";
+        header('Location: success_message.php');
     } else {
         // Error message
-        echo "<p>Oops! Something went wrong, and we couldn't send your message.</p>";
+        header('Location: failure_message.php');
     }
 } else {
     // Not a POST request
-    echo "<p>Something went wrong.</p>";
+    header('Location: failure_message.php');
 }

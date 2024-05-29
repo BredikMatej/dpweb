@@ -1,0 +1,154 @@
+body{
+    background-image: url("../img/profilebc.png");
+    object-position: center;
+    object-fit: cover;
+    color: #09010B;
+}
+
+.to-center{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+.profile-container {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(217, 217, 217, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile-avatar{
+    background-color: #355a8c;
+    color: aliceblue;
+    height: 20vw;
+    text-align: center;
+    margin-bottom: 5vw;
+    border-radius: 10px;
+}
+
+.profile-avatar p{
+    background-color: #355a8c;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 20vw;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.profile-info {
+    margin: 10px 0;
+}
+
+.profile-info label {
+    font-weight: bold;
+}
+
+.profile-actions {
+    margin-top: 20px;
+}
+
+.profile-actions a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: aliceblue;
+    color: #325169;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.profile-actions a:hover {
+    background-color: #aabfec;
+}
+
+
+.gallery-container {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.gallery-container img {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+input[type="file"] {
+    display: none;
+}
+label[for="image"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: aliceblue;
+    color: #325169;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+label[for="image"]:hover{
+    background-color: #aabfec;
+}
+
+input[type="submit"] {
+    background-color: aliceblue;
+    color: #325169;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+input[type="submit"]:hover {
+    background-color: #aabfec;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 150px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

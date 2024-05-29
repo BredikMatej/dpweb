@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         require_once "connect.php"; // Make sure this file has your database connection
 
-        $query = "SELECT id, username, password FROM Users WHERE username = ?";
+        $query = "SELECT id, username, email, password, permission FROM users WHERE username = ?";
         $stmt = $pdo->prepare($query);
         $stmt->execute([$username]);
 
@@ -20,6 +20,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $_SESSION['loggedin'] = true;
                 $_SESSION['userid'] = $user['id'];
                 $_SESSION['username'] = $user['username'];
+                $_SESSION['email'] = $user['email'];
+                $_SESSION['permission'] = $user['permission'];
 
                 // Redirect to a new page (e.g., user dashboard)
                 header("Location: ../index.php");
@@ -44,4 +46,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header("Location: ../signin.php");
     exit();
 }
-

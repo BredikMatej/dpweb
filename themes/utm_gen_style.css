@@ -1,0 +1,121 @@
+body{
+    background-color: #2B3444;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    position: sticky;
+    z-index: 99;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    top: 0;
+}
+
+a{
+    display: none;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .nav_item{
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 15px;
+    margin: 10px;
+    font-size: 26px;
+    font-weight: 300;
+    transition: 0.2s ease-in-out;
+}
+
+nav .nav_item:hover{
+    background-image: url("img/bcbutton.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.group-logo{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.group-logo h2 a{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 30px;
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.nav-logo{
+    display: inline-block;
+}
+
+.logo-header{
+    height: 125px;
+    width: 125px;
+}
+
+#utmSource, #customSource, #utmMedium, #customMedium {
+    font-size: 25px;
+    padding: 4px 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 315px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.element_div{
+    padding-bottom: 20px;
+}
+
+.element_input{
+    display: block;
+    font-size: 25px;
+    border: 0;
+    outline: 0;
+    color: rgb(60, 66, 87);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 16%) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+    border-radius: 4px;
+    line-height: 20px;
+    font-weight: 400;
+    padding: 4px 8px;
+    max-width: 300px;
+    min-height: 28px;
+    vertical-align: middle;
+    transition: background-color .24s,box-shadow .24s;
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.24s, 0.24s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+}
+
+.element_input:focus{
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0, 123, 255) 0px 0px 0px 4px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 16%) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+}
+
+.element_label{
+    padding: 15px;
+    display: block;
+    font-size: 25px;
+}
+
+.center_text{
+    text-align: center;
+}

@@ -1,0 +1,97 @@
+header{
+    position: sticky;
+    z-index: 99;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .nav_item{
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 15px;
+    margin: 10px;
+    font-size: 26px;
+    font-weight: 300;
+    transition: 0.3s ease-in-out;
+}
+
+nav .nav_item:hover{
+    color: #0f77e5;
+    text-shadow: darkslategray 0px 0px 10px;
+}
+
+.group-logo{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.group-logo h2 a{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 30px;
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    transition: 0.3s ease-in-out;
+}
+
+.group-logo h2 a:hover{
+    color: #0f77e5;
+    text-shadow: darkslategray 0px 0px 10px;
+}
+
+.nav-logo{
+    display: inline-block;
+}
+
+.logo-header{
+    height: 125px;
+    width: 125px;
+}
+
+.admin-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
+    position: fixed;
+    top: 120px; /* Adjust this value based on the height of your main header */
+    z-index: 1000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.admin-header .admin-link {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    background-color: aliceblue;
+    color: #2B3444;
+    padding: 20px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.admin-header .admin-link:hover {
+    background-color: #597692;
+}

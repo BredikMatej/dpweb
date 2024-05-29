@@ -1,0 +1,132 @@
+.product-details {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: -10px;
+
+}
+
+.product-details img {
+    max-width: 100%;
+    max-height: 900px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product-price {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #af6a6a;
+    margin-left: 10px;
+}
+
+.form-container {
+    max-width: 500px;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #325169;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-container label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure the width includes padding and border */
+}
+
+.form-container select{
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure the width includes padding and border */
+}
+
+.button_container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.form-container button {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin: 10px 5px 0 0;
+    background-color: aliceblue;
+    color: #325169;;
+    font-size: 18px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-height:50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-container button:hover {
+    background-color: #aabfec;
+}
+
+.cat_container{
+    display: flex;
+    gap:10px;
+}
+
+.cat_link{
+    text-decoration: none;
+    background-color: aliceblue;
+    color: #325169;
+    padding: 0 20px;
+    border-radius:3px;
+    font-size:16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: background-color 0.3s ease;
+}
+
+.cat_link:hover{
+    background-color: #aabfec;
+}
+
+
+.back-to-shop {
+    margin: 20px 0 0 10px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+@media (min-width: 768px) {
+    .product-details {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .product-details img {
+        max-width: 45%;
+        margin-bottom: 0;
+    }
+
+    .form-container {
+        max-width: 45%;
+    }
+}

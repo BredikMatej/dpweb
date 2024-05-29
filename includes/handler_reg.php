@@ -21,22 +21,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
     try {
-        require_once "connect.php";
+        require_once "./connect.php";
 
-        $query = "INSERT INTO Users (username, email, password) VALUES (?, ?, ?)";
+        $query = "INSERT INTO users (username, email, password) VALUES (?, ?, ?)";
         $stmt = $pdo->prepare($query);
         $stmt->execute([$username, $email, $hashed_password]);
 
         $pdo = null;
         $stmt = null;
 
-        header("Location: ../index.php");
+        header("Location: ../signin.php");
         exit();
     } catch (PDOException $e) {
         // Handle the exception properly
-        exit("Error: " . $e->getMessage());
+        header('Location: failure_message.php');
     }
 } else {
-    header("Location: ../index.php");
+    header('Location: failure_message.php');
     exit();
 }
